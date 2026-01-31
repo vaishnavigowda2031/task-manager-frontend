@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Playfair+Display:wght@600;700&family=Great+Vibes&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+/* GLOBAL */
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #f4efe9, #e6ddd2, #d6cbbd);
+  font-family: "Libre Baskerville", serif;
+  color: #2b2b2b;
+}
+
+/* PAGE */
+.page {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  font-family: "Playfair Display", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 44px;
+  letter-spacing: 1.5px;
+  margin: 0;
+  color: #2c2a26;
+}
+
+.header p {
+  font-family: "Great Vibes", cursive;
+  font-size: 28px;
+  font-style: normal;
+  color: #5a544b;
+  margin-top: 8px;
+  letter-spacing: 0.4px;
+  line-height: 1.2;
+}
+
+/* STATS */
+.stats {
+  display: flex;
+  gap: 30px;
+}
+
+.stat-label {
+  display: block;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #7a7368;
+}
+
+.stat-value {
+  font-family: "Playfair Display", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 24px;
+  color: #3a352f;
+}
+
+/* CARD */
+.card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(2px);
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* FORM */
+.field {
+  margin-bottom: 14px;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 4px;
+  color: #4a463f;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  font-family: "Libre Baskerville", serif;
+  border-radius: 6px;
+  border: 1px solid #c9c1b6;
+  background: #faf8f5;
+}
+
+/* BUTTONS */
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+button {
+  padding: 10px 16px;
+  font-family: "Playfair Display", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background: #3a352f;
+  color: #fff;
+}
+
+button.secondary {
+  background: #a79f94;
+}
+
+/* TOOLBAR */
+.toolbar {
+  margin-bottom: 20px;
+}
+
+.filters {
+  display: flex;
+  gap: 20px;
+}
+
+/* TASK LIST */
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-list li {
+  padding: 14px;
+  margin-bottom: 10px;
+  background: #f7f4ef;
+  border-radius: 8px;
+  box-shadow: inset 0 0 0 1px #ddd4c8;
+}
+
+/* EMPTY */
+.empty {
+  text-align: center;
+  color: #6b655c;
+  font-style: italic;
+}
+

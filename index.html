@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task Manager</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Great+Vibes&family=Poppins&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="header">
+    <h1>Task Manager</h1>
+    <p class="subtitle">
+      Organize tasks with title, description, and status.
+    </p>
+
+    <div class="stats">
+      <span>Total: <b id="total-count">0</b></span>
+      <span>Pending: <b id="pending-count">0</b></span>
+      <span>Completed: <b id="completed-count">0</b></span>
+    </div>
+  </header>
+
+  <!-- ================= ADD TASK FORM ================= -->
+  <section class="form-section">
+    <form id="task-form">
+      <input
+        type="text"
+        id="title"
+        placeholder="Task title"
+        required
+      />
+
+      <input
+        type="text"
+        id="description"
+        placeholder="Task description"
+      />
+
+      <select id="status">
+        <option value="pending">Pending</option>
+        <option value="completed">Completed</option>
+      </select>
+
+      <button type="submit">Add Task</button>
+    </form>
+  </section>
+
+  <!-- ================= FILTER & SEARCH ================= -->
+  <section class="controls">
+    <select id="filter">
+      <option value="all">All</option>
+      <option value="pending">Pending</option>
+      <option value="completed">Completed</option>
+    </select>
+
+    <input
+      type="text"
+      id="search"
+      placeholder="Search by title or description"
+    />
+  </section>
+
+  <!-- ================= TASK LIST ================= -->
+  <section class="task-container">
+    <div id="task-list">
+      <p>No tasks yet. Add your first task above.</p>
+    </div>
+  </section>
+
+  <!-- ================= SCRIPT ================= -->
+  <script src="script.js"></script>
+
+</body>
+</html>
